@@ -1,4 +1,38 @@
 /*Preloader page start*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+$roboto: 'Roboto Slab', serif;
+$raleway: 'Raleway', Arial, sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $roboto;
+	font-size: 1.26vmax;
+	line-height: 1.9vmax;
+	color: #323232;
+}
+
+a, a:hover, button, button:hover {
+	transition: all 200ms linear;
+	cursor: pointer;
+}
+
+.wrap {
+	width: 76vw;
+	margin: 0 auto;
+	position: relative;
+}
+.wrap_flex{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
 .preloader {
 	position: fixed;
 	left: 0;
@@ -62,3 +96,4 @@
 	75%{transform: translate(0, 160%);}
 }
 /*preloader page end*/
+@import 'header';

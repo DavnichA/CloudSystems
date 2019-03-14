@@ -18,8 +18,8 @@ const cssFiles = [
 
 ];
 const jsFiles = [
-	'app/js/lib.js',
-	'app/js/some.js'
+	'node_modules/jquery/dist/jquery.min.js',
+	'app/js/**/*.js'
 ];
 
 function sas() {
@@ -35,7 +35,7 @@ function sas() {
 
 function styles(){
 	return gulp.src(cssFiles)
-		.pipe(concat('all.css'))
+		.pipe(concat('style.css'))
 		.pipe(autoprefixer({
             browsers: ['> 0.1%'],
             cascade: false
@@ -49,7 +49,7 @@ function styles(){
 
 function scripts(){
 	return gulp.src('app/js/**/*.js')
-		.pipe(concat('all.js'))
+		.pipe(concat('main.js'))
 		.pipe(uglify({
 			toplevel: true
 		}))
