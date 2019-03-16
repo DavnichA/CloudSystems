@@ -15,6 +15,7 @@
 		</div>
 	</div>
 	<!-- Preloader end -->
+	<!-- Main page (header) -->
 	<header>
 		<div class="logo_navigation">
 			<div class="wrap wrap_flex">
@@ -30,9 +31,45 @@
 			</div>
 		</div>
 		<div class="background"></div>
+		<div class="background_two"></div>
+		<div class="header_buttons">
+			<button class="yellow_btn" onclick="slowScroll ('#form')">Написать нам</button>
+			<button class="green_btn" onclick="slowScroll ('#form')">О нас</button>
+		</div>
 	</header>
+	<main >
+		<div class="wrap" >
+			<!-- Our services -->
+			<section class="services">
+				<h2 id="form">наши услуги</h2>
+				<div class="service_points">
+					<div class="point">
+						<div class="amazon"></div>
+						<h3 id="underline_red">AMAZON WEB SERVICES</h3>
+						<p>Помогаем заказчикам создавать, архитектировать, переносить и управлять своими рабочими нагрузками и приложениями на AWS. Помощь в построении полноценной инфраструктуры в публичном облаке AWS. Предоставляем технические консультации по сервисам AWS.</p>
+					</div>
+					<div class="point">
+						<div class="vmware"></div>
+						<h3 id="underline_green">VMWARE</h3>
+						<p>Предоставляем партнерам возможность инвестировать в инфраструктуру VMware на основе ежемесячной подписки, обеспечивая успех публичных и гибридных облаков. Помочь партнерам лучше всего удовлетворить потребности клиентов благодаря уникальной ценности продуктов и решений VMware — от настольного компьютера до центра обработки данных до облака.</p>
+					</div>
+					<div class="point">
+						<div class="redhat"></div>
+						<h3 id="underline_blue">RED HAT</h3>
+						<p>Предоставляем технологию Red Hat в сочетании с нашим опытом и услугами по проектированию, планированию и внедрению передовых в отрасли решений с открытым исходным кодом и облачных вычислений. Благодаря комплексным продажам и технической подготовке, исключительным маркетинговым и торговым инструментам и надежной технической поддержке, мы полностью можем предоставить инновационные технологии с открытым исходным кодом и ценный опыт для ваших клиентов.</p>
+					</div>
+					<div class="point">
+						<div class="google_cloud"></div>
+						<h3 id="underline_yellow">GOOGLE CLOUD PLATFORM</h3>
+						<p>Предоставляем услуги по продажам, консалтингу, обучению, внедрению или технической поддержке сервисов и продуктов GCP.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
 
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="dist/js/main.js"></script>
+	<script src="dist/js/scroll_anchor.js"></script>
 </body>
 </html>

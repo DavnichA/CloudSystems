@@ -62,7 +62,9 @@ function watch(){
         server: {
             baseDir: "./"
         },
+        port: 9000,
         //tunnel: true,//временный тунель к проекту
+        //tunnel: 'dav-site-project',
         notify: false
     });
 
