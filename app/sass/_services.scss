@@ -4,12 +4,12 @@
 
 	h3 {
 		text-align: center;
-		margin-bottom: 3vh;
 		font-size: 1.25vmax;
 		text-decoration: underline #fff;
 	}
 
 	p {
+		margin-top: 2vh;
 		text-align: center;
 		font-size: 1.1vmax;
 		padding: 10px 10px 0 10px;
@@ -18,6 +18,10 @@
 }
 .point {
 	flex-basis: 25vw;
+}
+.services {
+	padding-bottom: 15vh;
+	position:relative;
 }
 %point_ico {
 	width: 10vw;
@@ -60,38 +64,28 @@
 	border-color: #f7d861;
 }
 
-#underline_green {
-	animation: mymove 5s infinite;
-}
-@keyframes mymove {
-  50% {
-    text-decoration-color: #34d293;    
-  }
+
+.green_line {
+	border: 1px solid #34d293;
+	width: 22%;
+	margin: 0 auto;
 }
 
-#underline_red {
-	animation: mymove_two 5s infinite;
-}
-@keyframes mymove_two {
-  50% {
-    text-decoration-color: #e96656;    
-  }
+.red_line {
+	border: 1px solid #e96656;
+	width: 55%;
+	margin: 0 auto;
 }
 
-#underline_blue {
-	animation: mymove_three 5s infinite;
-}
-@keyframes mymove_three {
-  50% {
-    text-decoration-color: #3ab0e2;    
-  }
+.blue_line {
+	border: 1px solid #3ab0e2;
+	width: 22%;
+	margin: 0 auto;
 }
 
-#underline_yellow {
-	animation: mymove_four 5s infinite;
+.yellow_line {
+	border: 1px solid #f7d861;
+	width: 65%;
+	margin: 0 auto;
 }
-@keyframes mymove_four {
-  50% {
-    text-decoration-color: #f7d861;    
-  }
-}
+

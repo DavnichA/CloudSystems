@@ -1,0 +1,44 @@
+.getting_started {
+	position: relative;
+	width: 100vw;
+	height: 45vh;
+	background-image: url('../../dist/img/public-private-cloud-computing.jpg');
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	
+
+  	.green_background {
+  		background-color: rgba(52, 210, 147, 0.8);
+  		width: 100vw;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+		align-items: center;
+		padding-top: 12vh;
+		padding-bottom: 16vh;
+  		
+
+  		p {
+  			color: #fff;
+  			line-height: 2.5vmax;
+  			font-size: 2vmax;
+  			text-align: center;
+  		}
+
+  		button {
+  			background-color: #14a168;
+        	box-shadow: 0px 5px 0px 0px #095679;
+        	color: #fff;
+        	font-size: 2vmax;
+        	border-radius: 8px;
+        	padding: 10px 20px 10px 20px;
+        	border: 0px solid;
+        	margin-top: 3vh;
+  		}
+  		button:hover {
+  			background-color:#007345;
+  		}
+  	}
+}

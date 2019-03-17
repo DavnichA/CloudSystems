@@ -1,0 +1,36 @@
+.about_us {
+	background-color:#272727;
+	width:100vw;
+	position: relative;
+	color: #FFF;
+	padding-bottom: 9vh;
+
+	h2 {
+		color: #fff;
+	}
+}
+.text_aboutus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	h3{
+		flex-grow: 1;
+  		flex-shrink: 1;
+  		flex-basis: 0;
+  		text-align: right;
+  		font-size: 4vmax;
+  		line-height: 8vh;
+  		padding-right: 2vw;
+	}
+
+	p {
+		flex-grow: 1;
+  		flex-shrink: 1;
+  		flex-basis: 0;
+  		font-size: 14px;
+  		line-height: 25px;
+  		text-align: left;
+  		color: #939393;
+	}
+}
