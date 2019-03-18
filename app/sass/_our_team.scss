@@ -1,0 +1,119 @@
+.our_team  {
+	padding-bottom: 15vh;
+
+	h2{
+		padding-bottom: 2vh;
+	}
+
+	h3{
+		text-align: center;
+		font-size: 2.2vh;
+		font-weight: normal;
+	}
+}
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10vh;
+
+}
+
+%background-card-photo {
+	width: 13vw;
+	height: 13vw;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.card_photo_igor, .card_photo_pavel, .card_photo_dmitry {
+	@extend %background-card-photo;
+
+}
+.card_photo_igor {
+	background: url('../../dist/img/igor2.png');
+	background-size: cover;
+}
+
+.card_photo_pavel {
+	background: url('../../dist/img/pavel-300x300.jpg');
+	background-size: cover;
+}
+
+.card_photo_dmitry {
+	background: url('../../dist/img/iam.png');
+	background-size: cover;
+}
+
+.card_product_manager, .card_sale_manager, .card_technical_specialist {
+	h4 {
+		text-align: center;
+		padding-top: 5vh;
+		padding-bottom: 1.5vh;
+
+	}
+	p {
+		text-align: center;
+		font-size: 2vh;
+	}
+}
+
+.card_product_manager {
+	padding-right: 10vw;
+
+	hr {
+		border: 1px solid #e96656;
+		width: 68%;
+		margin: 0 auto;
+	}
+}
+
+.card_sale_manager {
+	hr {
+		border: 1px solid #34d293;
+		width: 55%;
+		margin: 0 auto;
+	}
+}
+
+.card_technical_specialist {
+	padding-left: 10vw;
+
+	hr {
+		border: 1px solid #3ab0e2;
+		width: 66%;
+		margin: 0 auto;
+	}
+}
+
+/*send request*/
+
+.send_request {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #e96656;
+	padding: 10vh 0 10vh 0;
+
+	p {
+		color: #fff;
+		font-size: 3.5vh;
+	}
+
+	button {
+		background: linear-gradient(to top, #092442, #097297);
+        box-shadow: 0px 5px 0px 0px #095679;
+        color: #fff;
+        font-size: 3vh;
+        border-radius: 5px;
+        padding: 10px 20px 10px 20px;
+        border: 0px solid;
+        margin-left: 3vw;
+
+       
+	}
+	button:hover {
+        background: linear-gradient(to top, #097297, #092442);
+        } 
+}
+
