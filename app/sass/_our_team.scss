@@ -1,3 +1,4 @@
+/*our team section*/
 .our_team  {
 	padding-bottom: 15vh;
 
@@ -66,7 +67,9 @@
 		width: 68%;
 		margin: 0 auto;
 	}
+
 }
+
 
 .card_sale_manager {
 	hr {
@@ -86,7 +89,22 @@
 	}
 }
 
-/*send request*/
+.social_media  {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	a {
+		text-decoration: none;
+		color: #888;
+	}
+	a:hover {
+		color: #000;
+	}
+}
+
+
+/*send request section*/
 
 .send_request {
 	display: flex;
@@ -95,7 +113,7 @@
 	background-color: #e96656;
 	padding: 10vh 0 10vh 0;
 
-	p {
+	h4 {
 		color: #fff;
 		font-size: 3.5vh;
 	}

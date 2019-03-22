@@ -97,6 +97,9 @@ a, a:hover, button, button:hover {
 main {
 	position: relative;
 }
+section {
+	position: relative;
+}
 
 
 
@@ -107,7 +110,7 @@ main {
 	75%{transform: translate(0, 160%);}
 }
 /*preloader page end*/
-@import 'header', 'services', 'getting_started', 'about_us', 'our_team';
+@import 'header', 'services', 'getting_started', 'about_us', 'our_team', 'news', 'feedback_form';
 
 
 

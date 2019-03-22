@@ -22,13 +22,14 @@
 			<div class="wrap wrap_flex">
 				<a href="https://cloudsystems.com.ua"><img src="dist/img/logo.png" alt="Cloud Systems"></a>
 				<nav>
+					<ul>
 						<li class="active"><a href="">Главная</a></li>
 						<li><a href="">Наши услуги</a></li>
 						<li><a href="">О нас</a></li>
 						<li><a href="">Наша команда</a></li>
 						<li><a href="">Наши новости</a></li>
 						<li><a href="">Связаться с нами</a></li>
-						
+					</ul>
 				</nav>
 			</div>
 		</div>
@@ -36,17 +37,17 @@
 		<div class="background_two"></div>
 		<div class="header_buttons">
 			<button class="yellow_btn" onclick="slowScroll ('#form')">Написать нам</button>
-			<button class="green_btn" onclick="slowScroll ('#form')">О нас</button>
+			<button class="green_btn" onclick="slowScroll ('#scroll_us')">О нас</button>
 		</div>
 	</header>
 	<main >
 		<div class="wrap" >
 			<!-- Our services -->
 			<section class="services">
-				<h2 id="form">Наши услуги</h2>
+				<h2>Наши услуги</h2>
 				<div class="service_points">
 					<div class="point">
-						<div class="amazon"></div>
+						<div class="amazon"> <a href=""></a></div>
 						<h3>AMAZON WEB SERVICES</h3>
 						<hr class="red_line">
 						<p>Помогаем заказчикам создавать, архитектировать, переносить и управлять своими рабочими нагрузками и приложениями на AWS. Помощь в построении полноценной инфраструктуры в публичном облаке AWS. Предоставляем технические консультации по сервисам AWS.</p>
@@ -75,12 +76,12 @@
 		<!-- Getting started with us is easy! -->
 			<section class="getting_started">
 				<div class="green_background">
-					<p>Начать работать с нами очень просто! Достаточно нажать кнопку <br> ниже и заполнить форму обратной связи!</p>
-					<button>Начать</button>
+					<h4>Начать работать с нами очень просто! Достаточно нажать кнопку <br> ниже и заполнить форму обратной связи!</h4> 
+					<button onclick="slowScroll ('#form')">Начать</button>
 				</div>
 			</section>
 		<!-- About us -->
-			<section class="about_us">
+			<section class="about_us" id="scroll_us">
 				<h2>О нас</h2>
 				<div class="text_aboutus">
 					<h3>Cloud Systems  - <br>Optimize<br> Intelligence!</h3>
@@ -97,30 +98,103 @@
 						<h4>IGOR OLEKSIENKO</h4>
 						<hr>
 						<p>Product Manager</p>
+						<div class="social_media">
+							<a href=""><i class="fab fa-twitter-square"></i></a>
+							<a href=""><i class="fab fa-telegram"></i></a>
+							<a href=""><i class="fab fa-skype"></i></a>
+							<a href=""><i class="fab fa-viber"></i></a>
+						</div>
 					</div>
 					<div class="card_sale_manager">
 						<div class="card_photo_pavel"></div>
 						<h4>PAVEL LAPADA</h4>
 						<hr>
 						<p>Sale Manager</p>
+						<div class="social_media">
+							<a href=""><i class="fab fa-twitter-square"></i></a>
+							<a href=""><i class="fab fa-telegram"></i></a>
+							<a href=""><i class="fab fa-skype"></i></a>
+							<a href=""><i class="fab fa-viber"></i></a>
+						</div>
+
 					</div>
 					<div class="card_technical_specialist">
 						<div class="card_photo_dmitry"></div>
 						<h4>DMITRY STUKAN</h4>
 						<hr>
 						<p>Technical Specialist</p>
+						<div class="social_media">
+							<a href=""><i class="fab fa-twitter-square"></i></a>
+							<a href=""><i class="fab fa-telegram"></i></a>
+							<a href=""><i class="fab fa-skype"></i></a>
+							<a href=""><i class="fab fa-viber"></i></a>
+						</div>
+
 					</div>
 				</div>
 			</section>
 			<!-- send request -->
 			<section class="send_request">
-				<p>Для начала работы с нами просто отправьте нашим менеджерам запрос</p>
-				<button>Отправить запрос</button>
+				<h4>Для начала работы с нами просто отправьте нашим менеджерам запрос</h4> 
+				<button onclick="slowScroll ('#form')">Отправить запрос</button>
+			</section>
+			<!-- News -->
+			<section class="news">
+				<h2>Новости нашей компании</h2>
+				<h3>Чем мы живем</h3>
+				<div class="news_wrap">
+					<div class="element_news">
+						<a href=""><div class="img_news first_news"></div></a>
+						<a href=""><h3>Итоги недели: VMware, Google, Cisco, Red Hat</h3></a>
+						<hr class="news_red_line">
+						<p>На днях как раз проходила конференция RSA, на которой “боролись” со стандартными уязвимостями, угрозами и брешами в безопасности. Так VMware там представила Service-defined Firewall. Как отмечается, в отличие от брандмауэров периметра, которые должны фильтровать трафик с бесчисленного множества неизвестных хостов, представленное решение обладает преимуществом глубокого обзора хостов и сервисов, генерирующих сетевой трафик. Это ПО может <a href="" class="three_dots">[...]</a></p>
+					</div>
+					<div class="element_news">
+						<a href=""><div class="img_news second_news"></div></a>
+						<a href=""><h3>UTM тянет вверх мировой рынок средств безопасности</h3></a>
+						<hr class="news_green_line">
+						<p>Как полагают аналитики IDC, в финальном квартале 2018 г. выручка мирового рынка средств ИТ-безопасности увеличилась на 16,7% «YoY», до 4,5 млрд долл. Квартальные поставки выросли «год к году» на 20%, что соответствует почти 1,1 млн отгруженных устройств. Главным двигателем роста выручки остается сегмент продуктов, связанных с комплексной защитой от угроз (UTM). Лишь за квартал показатели <a href="" class="three_dots">[...]</a></p>
+					</div>
+					<div class="element_news">
+						<a href=""><div class="img_news third_news"></div></a>
+						<a href=""><h3>МУК становится дистрибьютором Autodesk в Украине</h3></a>
+						<hr class="news_blue_line">
+						<p>Группа компаний МУК и Autodesk, мировой лидер в области разработки ПО для 2D- и 3D-проектирования, а также создания графики и анимации, расширили сотрудничество в Армении, Беларуси, Грузии и Молдове и заключили дистрибьюторское соглашение на территории Азербайджана и Украины. Autodesk разрабатывает решения для промышленного и гражданского строительства, машиностроения, рынка средств информации и развлечений, внедряя в них Читать больше проМУК становится дистрибьютором Autodesk в Украине <a href="" class="three_dots">[...]</a></p>
+					</div>
+					<div class="element_news">
+						<a href=""><div class="img_news four_news"></div></a>
+						<a href=""><h3>Готовы ли украинские предприятия размещать в облаке критичные сервисы?</h3></a>
+						<hr class="news_yellow_line">
+						<p>Максим Агеев генеральный директор компании De Novo Прошлый год был успешным для рынка облаков в Украине. По нашей оценке, годовой прирост составил не менее 25%, а объем продаж, очевидно, приблизился к 20 млн долл. Доля IaaS при этом превышает 60% от всех видов облачных сервисов. Использование облаков стало рутинной задачей для многих ИТ-менеджеров. Экономичное обеспечение <a href="" class="three_dots">[...]</a></p>
+					</div>
+				</div>
+			</section>
+			<!-- feedback form -->
+			<section class="feedback_form">
+				<div class="shadow_background">
+					<h2 id="form">Свяжитесь с нами</h2>
+					<h3>Отправьте нам свой вопрос и получите оперативный ответ!</h3>
+					<div class="contact">
+						<form action="">
+							<label for="fname">Ваше имя</label>
+    						<input type="text" id="fname" name="firstname" placeholder="Имя" required>
+							<label for="usremail">Ваш e-mail </label>
+    						<input type="email" id="usremail" name="email" placeholder="E-mail" required>
+    						<label for="mobile">Ваш телефон</label>
+    						<input type="tel" id="mobile" name="usrtel" placeholder="Телефон" required>
+    						<label for="theme">Тема письма</label>
+    						<input type="text" id="theme" name="usrtheme" placeholder="Тема">
+    						<label for="subject">Сообщение (Опишите свой вопрос одним или несколькими предложениями)</label>
+    						<textarea id="subject" name="subject" placeholder="Ваше сообщение" style="height:200px"></textarea>
+    						<input type="submit" value="Отправить">
+						</form>
+					</div>
+				</div>
 			</section>
 	</main>
 
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="dist/js/main.js"></script>
-	<script src="dist/js/scroll_anchor.js"></script>
+	<script src="app/scroll_anchor.js"></script>
 </body>
 </html>
