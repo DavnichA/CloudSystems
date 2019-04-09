@@ -15,9 +15,11 @@
 
 .news_wrap {
 	display: flex;
-	/*align-items: center;*/
+	align-items: flex-start;
 	justify-content: center;
 	padding-top: 10vh;
+	width: 80vw;
+	margin: 0 auto;
 }
 
 

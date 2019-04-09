@@ -12,9 +12,10 @@ $raleway: 'Raleway', Arial, sans-serif;
 
 body {
 	font-family: $roboto;
-	font-size: 1.26vmax;
-	line-height: 1.9vmax;
+	font-size: 1.26vw;
+	line-height: 1.9vw;
 	color: #323232;
+	position: relative;
 }
 
 a, a:hover, button, button:hover {
@@ -101,8 +102,6 @@ section {
 	position: relative;
 }
 
-
-
 @keyframes spin {
 	0%,100%{transform: translate(0);}
 	25%{transform: translate(160%);}
@@ -110,7 +109,7 @@ section {
 	75%{transform: translate(0, 160%);}
 }
 /*preloader page end*/
-@import 'header', 'services', 'getting_started', 'about_us', 'our_team', 'news', 'feedback_form';
+@import 'header', 'services', 'getting_started', 'about_us', 'our_team', 'news', 'feedback_form', 'footer', 'media';
 
 
 

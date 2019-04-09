@@ -6,7 +6,13 @@
 	<title>Cloud Systems</title>
 	<link rel="icon" type="image/png"  href="favicon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="app/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="app/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="dist/css/style.css">
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 	<!-- Preloader start -->
@@ -17,23 +23,26 @@
 	</div>
 	<!-- Preloader end -->
 	<!-- Main page (header) -->
-	<header>
+	<header id="home">
 		<div class="logo_navigation">
-			<div class="wrap wrap_flex">
+			<div class="wrap wrap_flex" >
 				<a href="https://cloudsystems.com.ua"><img src="dist/img/logo.png" alt="Cloud Systems"></a>
-				<nav>
+				<div class="toggle">
+						<i class="fas fa-bars menu"></i>
+					</div>
+				<nav id="main-header">	
 					<ul>
-						<li class="active"><a href="">Главная</a></li>
-						<li><a href="">Наши услуги</a></li>
-						<li><a href="">О нас</a></li>
-						<li><a href="">Наша команда</a></li>
-						<li><a href="">Наши новости</a></li>
-						<li><a href="">Связаться с нами</a></li>
+						<li><a onclick="slowScroll ('#home')">Главная</a></li>
+						<li><a onclick="slowScroll ('#services')">Наши услуги</a></li>
+						<li><a onclick="slowScroll ('#scroll_us')">О нас</a></li>
+						<li><a onclick="slowScroll ('#our_team')">Наша команда</a></li>
+						<li><a onclick="slowScroll ('#news')">Наши новости</a></li>
+						<li><a onclick="slowScroll ('#form')">Связаться с нами</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-		<div class="background"></div>
+		<div class="background" ></div>
 		<div class="background_two"></div>
 		<div class="header_buttons">
 			<button class="yellow_btn" onclick="slowScroll ('#form')">Написать нам</button>
@@ -41,9 +50,9 @@
 		</div>
 	</header>
 	<main >
-		<div class="wrap" >
+		<div class="wrap">
 			<!-- Our services -->
-			<section class="services">
+			<section class="services section" id="services">
 				<h2>Наши услуги</h2>
 				<div class="service_points">
 					<div class="point">
@@ -81,7 +90,7 @@
 				</div>
 			</section>
 		<!-- About us -->
-			<section class="about_us" id="scroll_us">
+			<section class="about_us section" id="scroll_us">
 				<h2>О нас</h2>
 				<div class="text_aboutus">
 					<h3>Cloud Systems  - <br>Optimize<br> Intelligence!</h3>
@@ -89,7 +98,7 @@
 				</div>
 			</section>
 			<!-- Our team -->
-			<section class="our_team">
+			<section class="our_team section" id="our_team">
 				<h2>Наша команда</h2>
 				<h3>Люди, которые работают для вас</h3>
 				<div class="card">
@@ -105,6 +114,7 @@
 							<a href=""><i class="fab fa-viber"></i></a>
 						</div>
 					</div>
+
 					<div class="card_sale_manager">
 						<div class="card_photo_pavel"></div>
 						<h4>PAVEL LAPADA</h4>
@@ -116,8 +126,8 @@
 							<a href=""><i class="fab fa-skype"></i></a>
 							<a href=""><i class="fab fa-viber"></i></a>
 						</div>
-
 					</div>
+
 					<div class="card_technical_specialist">
 						<div class="card_photo_dmitry"></div>
 						<h4>DMITRY STUKAN</h4>
@@ -129,7 +139,6 @@
 							<a href=""><i class="fab fa-skype"></i></a>
 							<a href=""><i class="fab fa-viber"></i></a>
 						</div>
-
 					</div>
 				</div>
 			</section>
@@ -139,29 +148,53 @@
 				<button onclick="slowScroll ('#form')">Отправить запрос</button>
 			</section>
 			<!-- News -->
-			<section class="news">
+			<section class="news section" id="news">
 				<h2>Новости нашей компании</h2>
 				<h3>Чем мы живем</h3>
-				<div class="news_wrap">
-					<div class="element_news">
+				<div class="news_wrap owl-carousel owl-theme">
+					<div class="element_news item">
 						<a href=""><div class="img_news first_news"></div></a>
 						<a href=""><h3>Итоги недели: VMware, Google, Cisco, Red Hat</h3></a>
 						<hr class="news_red_line">
 						<p>На днях как раз проходила конференция RSA, на которой “боролись” со стандартными уязвимостями, угрозами и брешами в безопасности. Так VMware там представила Service-defined Firewall. Как отмечается, в отличие от брандмауэров периметра, которые должны фильтровать трафик с бесчисленного множества неизвестных хостов, представленное решение обладает преимуществом глубокого обзора хостов и сервисов, генерирующих сетевой трафик. Это ПО может <a href="" class="three_dots">[...]</a></p>
 					</div>
-					<div class="element_news">
+					<div class="element_news item">
 						<a href=""><div class="img_news second_news"></div></a>
 						<a href=""><h3>UTM тянет вверх мировой рынок средств безопасности</h3></a>
 						<hr class="news_green_line">
 						<p>Как полагают аналитики IDC, в финальном квартале 2018 г. выручка мирового рынка средств ИТ-безопасности увеличилась на 16,7% «YoY», до 4,5 млрд долл. Квартальные поставки выросли «год к году» на 20%, что соответствует почти 1,1 млн отгруженных устройств. Главным двигателем роста выручки остается сегмент продуктов, связанных с комплексной защитой от угроз (UTM). Лишь за квартал показатели <a href="" class="three_dots">[...]</a></p>
 					</div>
-					<div class="element_news">
+					<div class="element_news item">
 						<a href=""><div class="img_news third_news"></div></a>
 						<a href=""><h3>МУК становится дистрибьютором Autodesk в Украине</h3></a>
 						<hr class="news_blue_line">
 						<p>Группа компаний МУК и Autodesk, мировой лидер в области разработки ПО для 2D- и 3D-проектирования, а также создания графики и анимации, расширили сотрудничество в Армении, Беларуси, Грузии и Молдове и заключили дистрибьюторское соглашение на территории Азербайджана и Украины. Autodesk разрабатывает решения для промышленного и гражданского строительства, машиностроения, рынка средств информации и развлечений, внедряя в них Читать больше проМУК становится дистрибьютором Autodesk в Украине <a href="" class="three_dots">[...]</a></p>
 					</div>
-					<div class="element_news">
+					<div class="element_news item">
+						<a href=""><div class="img_news four_news"></div></a>
+						<a href=""><h3>Готовы ли украинские предприятия размещать в облаке критичные сервисы?</h3></a>
+						<hr class="news_yellow_line">
+						<p>Максим Агеев генеральный директор компании De Novo Прошлый год был успешным для рынка облаков в Украине. По нашей оценке, годовой прирост составил не менее 25%, а объем продаж, очевидно, приблизился к 20 млн долл. Доля IaaS при этом превышает 60% от всех видов облачных сервисов. Использование облаков стало рутинной задачей для многих ИТ-менеджеров. Экономичное обеспечение <a href="" class="three_dots">[...]</a></p>
+					</div>
+					<div class="element_news item">
+						<a href=""><div class="img_news first_news"></div></a>
+						<a href=""><h3>Итоги недели: VMware, Google, Cisco, Red Hat</h3></a>
+						<hr class="news_red_line">
+						<p>На днях как раз проходила конференция RSA, на которой “боролись” со стандартными уязвимостями, угрозами и брешами в безопасности. Так VMware там представила Service-defined Firewall. Как отмечается, в отличие от брандмауэров периметра, которые должны фильтровать трафик с бесчисленного множества неизвестных хостов, представленное решение обладает преимуществом глубокого обзора хостов и сервисов, генерирующих сетевой трафик. Это ПО может <a href="" class="three_dots">[...]</a></p>
+					</div>
+					<div class="element_news item">
+						<a href=""><div class="img_news second_news"></div></a>
+						<a href=""><h3>UTM тянет вверх мировой рынок средств безопасности</h3></a>
+						<hr class="news_green_line">
+						<p>Как полагают аналитики IDC, в финальном квартале 2018 г. выручка мирового рынка средств ИТ-безопасности увеличилась на 16,7% «YoY», до 4,5 млрд долл. Квартальные поставки выросли «год к году» на 20%, что соответствует почти 1,1 млн отгруженных устройств. Главным двигателем роста выручки остается сегмент продуктов, связанных с комплексной защитой от угроз (UTM). Лишь за квартал показатели <a href="" class="three_dots">[...]</a></p>
+					</div>
+					<div class="element_news item">
+						<a href=""><div class="img_news third_news"></div></a>
+						<a href=""><h3>МУК становится дистрибьютором Autodesk в Украине</h3></a>
+						<hr class="news_blue_line">
+						<p>Группа компаний МУК и Autodesk, мировой лидер в области разработки ПО для 2D- и 3D-проектирования, а также создания графики и анимации, расширили сотрудничество в Армении, Беларуси, Грузии и Молдове и заключили дистрибьюторское соглашение на территории Азербайджана и Украины. Autodesk разрабатывает решения для промышленного и гражданского строительства, машиностроения, рынка средств информации и развлечений, внедряя в них Читать больше проМУК становится дистрибьютором Autodesk в Украине <a href="" class="three_dots">[...]</a></p>
+					</div>
+					<div class="element_news item">
 						<a href=""><div class="img_news four_news"></div></a>
 						<a href=""><h3>Готовы ли украинские предприятия размещать в облаке критичные сервисы?</h3></a>
 						<hr class="news_yellow_line">
@@ -170,9 +203,9 @@
 				</div>
 			</section>
 			<!-- feedback form -->
-			<section class="feedback_form">
+			<section class="feedback_form section" id="form">
 				<div class="shadow_background">
-					<h2 id="form">Свяжитесь с нами</h2>
+					<h2>Свяжитесь с нами</h2>
 					<h3>Отправьте нам свой вопрос и получите оперативный ответ!</h3>
 					<div class="contact">
 						<form action="">
@@ -192,9 +225,37 @@
 				</div>
 			</section>
 	</main>
+	<footer>
+		<div class="address">
+			<a href="https://www.google.com.sg/maps/place/вулиця+Набережно-Хрещатицька,+10А,+Київ,+02000/@50.4705339,30.5222078,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4ce4719d24301:0xde3946ae7b6b272c!8m2!3d50.4705339!4d30.5243965" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+			<p>Украина, 04070, г. Киев,<br> ул. Набережно-Крещатицкая, дом 10-А</p>
+		</div>
+		<div class="footer_mail">
+			<a href="mailto:office@cloudsystems.com.ua"><i class="fas fa-envelope"></i></a>
+			<p>office@cloudsystems.com.ua</p>
+		</div>
+		<div class="footer_phone">
+			<a href="tel: +380445380006"><i class="fas fa-phone-square"></i></a>
+			<p>+38(044)5380006</p>
+		</div>
+		<div class="footer_social">
+			<div class="wrap_footer_social">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<p>&copy; Cloud Systems 2019</p>
+			</div>
+		</div>
+	</footer>
 
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="app/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 	<script src="dist/js/main.js"></script>
 	<script src="app/scroll_anchor.js"></script>
+	<script src="app/active_menu.js"></script>
+	<script src="dist/carousel.js"></script>
 </body>
 </html>

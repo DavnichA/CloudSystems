@@ -1,0 +1,120 @@
+/*mobile*/
+@media (max-width: 767px) {
+	/*header*/
+	.toggle {
+		display: block;
+		flex-basis: 30%;
+		margin-right: 5vw;
+	}
+
+	.wrap {
+		width: 100vw;
+	}
+
+	.wrap_flex {
+		flex-wrap: wrap;
+		flex-direction: row;
+		
+	}
+
+	.logo_navigation a img {
+		flex-basis: 30%;
+		margin-left: 5vw;
+	}
+
+	.logo_navigation_click{
+		height: 100vh;
+	}
+
+	#main-header {
+		flex-basis: 100%;
+
+		ul{
+			background-color: #000000;
+			height: 90vh;
+			display: none;
+
+		}
+
+		ul li {
+			display: block;
+			text-align: center;
+			padding-top: 10vh;
+		}
+		ul li a {
+			font-size: 5vw;
+			color: #fff;
+		}
+	}
+
+	.toggle_active {
+		display: block !important; 
+	}
+
+	.background{
+		width: 100%;
+		height: 60%;
+		background-size: cover;
+		top: 25vh;
+		transform: none !important;
+	}
+
+	.header_buttons {
+		margin-top: 55vh;
+	}
+
+	.yellow_btn, .green_btn {
+		font-size: 5vw !important;
+	}
+
+	/*services*/
+
+	.service_points {
+		flex-wrap: wrap;
+
+		h3 {
+			font-size: 4.5vw;
+		}
+		p {
+			font-size: 4vw;
+			line-height: 6vw;
+		}
+	}
+
+	.point {
+		flex-basis: 100vw;
+	}
+	%point_ico {
+		width: 28vw;
+		height: 28vw;
+		margin-top: 5vh;
+	}
+
+	.services {
+		padding-bottom: 8vh;
+
+		h2 {
+		padding-bottom: 4vh;
+		}
+	}
+
+	/*getting started*/
+
+	.getting_started {
+		height: 30vh;
+	}
+
+	.green_background {
+		padding-top: 5vh !important;
+
+		h4 {
+			line-height: 5vw !important;
+  			font-size: 6vw !important;
+		}
+
+		button {
+			
+		}
+	}
+
+}
